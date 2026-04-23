@@ -1,3 +1,9 @@
 spring:
-  application:
-    name: demo
+  datasource:
+    url: jdbc:postgresql://localhost:5432/med_app_db
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: update # O Spring vai criar as tabelas sozinho!
+    show-sql: true
